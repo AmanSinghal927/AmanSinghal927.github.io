@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Aman Singhal"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Computer Science @ NYU | Data Scientist | Software Engineer | ML"
   location         : "Manhattan, New York"
   employer         : "New York University"
   pubmed           :
   googlescholar    : 
-  email            :
+  email            :  "as14661@nyu.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   cv_link          : https://amansinghal927.github.io/files/Aman_Singhal_CV.pdf
