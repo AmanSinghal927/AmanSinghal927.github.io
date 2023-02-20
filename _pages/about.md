@@ -15,7 +15,7 @@ I am currently pursuing Masters in Computer Science at the Courant Institute of 
 Looking to get internship opportunities in the field of natural language processing and application. Interested in smart assistants, language understanding, and sequential problems.
 
 <!-- Thoughts and Qs from my projects -->
-=====
+<!-- ===== -->
 {% for post in site.portfolio %}
   {% include archive-single.html type="grid" %}
 {% endfor %}
