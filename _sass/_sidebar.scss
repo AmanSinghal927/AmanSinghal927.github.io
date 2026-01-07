@@ -18,7 +18,7 @@
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
-    margin-top: 0.5em; // Align sidebar top with #main top
+    margin-top: 0; // Align sidebar top with page content top
 
     &:hover {
       opacity: 1;
