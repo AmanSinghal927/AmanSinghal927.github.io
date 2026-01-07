@@ -91,6 +91,7 @@
     width: auto;
     height: auto;
     text-align: left; // Left-align the image
+    margin-top: 2em; // Align with "About Me" heading
     margin-bottom: 1rem; // Compact spacing below photo
   }
 
@@ -161,7 +162,7 @@
   @include breakpoint($large) {
     margin-top: 0.4rem;
     margin-bottom: 1rem; // Tighter spacing for compact layout
-    font-size: $type-size-6; // Same as links
+    font-size: 0.825em; // Slightly larger (~13px)
     font-weight: 400; // Normal weight for bio
     line-height: 1.4;
     color: #000; // Pure black
@@ -278,7 +279,7 @@
     @include breakpoint($large) {
       display: inline-flex; // Use flexbox for icon + text alignment
       align-items: center;
-      font-size: $type-size-6; // Slightly larger font
+      font-size: 0.825em; // Slightly larger (~13px)
       padding: 0.15rem 0; // Tighter padding for compact look
       color: #000; // Black text for links
     }
