@@ -91,7 +91,7 @@
     width: auto;
     height: auto;
     text-align: left; // Left-align the image
-    margin-top: 2em; // Match #main margin-top to align with "About Me"
+    margin-top: 3.5em; // Position top of image at bottom of "About Me" heading (0.5em main + ~2.5em h2 height + 0.5em padding)
     margin-bottom: 1rem; // Compact spacing below photo
   }
 
