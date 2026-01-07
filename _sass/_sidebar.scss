@@ -80,6 +80,8 @@
     display: block;
     width: auto;
     height: auto;
+    text-align: center; // Center the image
+    margin-bottom: 1.5rem; // More space below photo
   }
 
   img {
@@ -87,8 +89,8 @@
     border-radius: 50%;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
+      padding: 0; // Remove padding for cleaner look
+      border: none; // Remove border for cleaner look
     }
   }
 }
@@ -105,6 +107,7 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    text-align: center; // Center the content
   }
 }
 
@@ -112,21 +115,31 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
 }
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
+
+  @include breakpoint($large) {
+    font-size: 2.5rem; // Much larger name
+    font-weight: 700; // Bolder weight
+    line-height: 1.2;
+  }
 }
 
 .author__bio {
   margin: 0;
+  font-size: $type-size-6;
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem; // Cleaner font size
+    font-weight: 400; // Normal weight for bio
+    line-height: 1.4;
   }
 }
 
@@ -180,6 +193,7 @@
     border: 0;
     background: transparent;
     box-shadow: none;
+    text-align: center; // Center the links
   }
 
   &:before {
@@ -218,6 +232,12 @@
 
   li {
     white-space: nowrap;
+
+    @include breakpoint($large) {
+      display: block; // Stack links vertically
+      margin-bottom: 0.75rem; // More vertical spacing
+      width: 100%;
+    }
   }
 
   a {
@@ -229,6 +249,20 @@
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
+
+    @include breakpoint($large) {
+      display: inline-flex; // Use flexbox for icon + text alignment
+      align-items: center;
+      font-size: $type-size-6; // Slightly larger font
+      padding: 0.5rem 0;
+    }
+
+    i {
+      @include breakpoint($large) {
+        margin-right: 0.5rem; // Space between icon and text
+        font-size: $type-size-5;
+      }
+    }
 
     &:hover {
       text-decoration: underline;

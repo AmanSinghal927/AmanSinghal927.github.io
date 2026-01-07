@@ -39,6 +39,7 @@
 
     .project-card__tooltip {
       opacity: 1;
+      visibility: visible; // Make visible on hover
       transform: translateX(-50%) translateY(0); // Slide up to final position
     }
   }
@@ -135,8 +136,9 @@
   text-align: left;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   opacity: 0;
+  visibility: hidden; // Hide by default
   pointer-events: none;
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
   z-index: 100;
   white-space: normal;
 
@@ -163,6 +165,7 @@
 
   .project-card.show-description .project-card__tooltip {
     opacity: 1;
+    visibility: visible;
     transform: translateX(-50%) translateY(0);
     pointer-events: auto;
   }
