@@ -41,7 +41,7 @@
   // Override for author name specifically
   h3.author__name {
     @include breakpoint($large) {
-      font-size: 1.55rem !important; // Larger by ~2pt
+      font-size: 1.85rem !important; // Larger by ~4pt more
       font-weight: 700 !important;
       font-family: $sans-serif !important;
       color: #000 !important; // Pure black
@@ -91,7 +91,7 @@
     width: auto;
     height: auto;
     text-align: left; // Left-align the image
-    margin-top: calc(2em + 3cm); // Move down by additional 3cm
+    margin-top: calc(2em + 0.3cm); // Small gap adjustment
     margin-bottom: 1rem; // Compact spacing below photo
   }
 
@@ -147,7 +147,7 @@
   font-size: $type-size-5;
 
   @include breakpoint($large) {
-    font-size: 1.55rem !important; // Larger by ~2pt
+    font-size: 1.85rem !important; // Larger by ~4pt more
     font-weight: 700 !important; // Bold
     line-height: 1.3 !important;
     letter-spacing: -0.01em;
@@ -162,7 +162,7 @@
   @include breakpoint($large) {
     margin-top: 0.4rem;
     margin-bottom: 1rem; // Tighter spacing for compact layout
-    font-size: 0.95em; // Larger by ~2pt (~15px)
+    font-size: 1.2em; // Larger by ~4pt more (~19px)
     font-weight: 400; // Normal weight for bio
     line-height: 1.4;
     color: #000; // Pure black
@@ -279,7 +279,7 @@
     @include breakpoint($large) {
       display: inline-flex; // Use flexbox for icon + text alignment
       align-items: center;
-      font-size: 0.95em; // Larger by ~2pt (~15px)
+      font-size: 1.2em; // Larger by ~4pt more (~19px)
       padding: 0.15rem 0; // Tighter padding for compact look
       color: #000; // Black text for links
     }
