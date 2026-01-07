@@ -34,10 +34,12 @@
   flex-direction: column;
   height: 100%;
   position: relative; // For tooltip positioning
+  z-index: 1; // Base z-index
 
   &:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
+    z-index: 1001; // Raise above adjacent cards and their tooltips on hover
 
     .project-card__tooltip {
       opacity: 1;
