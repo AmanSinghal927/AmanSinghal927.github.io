@@ -1,14 +1,12 @@
 ---
 permalink: /
-title: "Aman Singhal"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
-
-## About Me
 
 I'm a Sr Research Engineer at Together AI, working on making inference faster at scale. Mostly that means speculative decoding—training models, cooking up data recipes, and building out training framework features as needed. Lately I've been digging into long-context training and model distillation.
 
