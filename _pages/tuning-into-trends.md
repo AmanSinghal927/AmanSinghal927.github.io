@@ -5,8 +5,6 @@ excerpt: "An analysis of streaming popularity, lyrical emotion, and social media
 author_profile: true
 ---
 
-# Tuning into Trends: An Analysis of Artists' Streaming Popularity
-
 **Presented by:** Aman Singhal, Karthikeyan Shanmugam, Stanley Jovel
 
 **Venue:** Big Data Analytics Symposium, NYU Courant Institute of Mathematical Sciences
