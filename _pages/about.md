@@ -21,8 +21,10 @@ These days I'm most excited about RL for language models, systems work around at
 <div class="projects-grid">
 
   <div class="project-card">
+    <div class="project-card__tooltip">
+      Explored retrieval strategies for RAG pipelines including chunking optimization, sparse vs. dense embeddings (TF-IDF, DRAGON+, Sentence Transformers), and two-level retrieve-and-rerank approaches. Achieved 78.6% Recall@10 through rechunking and similarity thresholding.
+    </div>
     <div class="project-card__image">
-      <div class="project-card__hover-overlay" data-description="Explored retrieval strategies for RAG pipelines including chunking optimization, sparse vs. dense embeddings (TF-IDF, DRAGON+, Sentence Transformers), and two-level retrieve-and-rerank approaches. Achieved 78.6% Recall@10 through rechunking and similarity thresholding."></div>
     </div>
     <div class="project-card__content">
       <h3 class="project-card__title">Retrieval Optimization</h3>
@@ -45,8 +47,10 @@ These days I'm most excited about RL for language models, systems work around at
   </div>
 
   <div class="project-card">
+    <div class="project-card__tooltip">
+      LLMs in healthcare produce untrustworthy outputs due to biases from human annotators in RLHF. We leverage structural bias in multiple-choice questions to generate alignment data at medical licensing exam complexity, achieving +5.5% over SFT on MMLU medical subsets.
+    </div>
     <div class="project-card__image">
-      <div class="project-card__hover-overlay" data-description="LLMs in healthcare produce untrustworthy outputs due to biases from human annotators in RLHF. We leverage structural bias in multiple-choice questions to generate alignment data at medical licensing exam complexity, achieving +5.5% over SFT on MMLU medical subsets."></div>
     </div>
     <div class="project-card__content">
       <h3 class="project-card__title">DPO-RLIF: Reinforcement Learning from Structurally-Derived Implicit Feedback</h3>
@@ -69,8 +73,10 @@ These days I'm most excited about RL for language models, systems work around at
   </div>
 
   <div class="project-card">
+    <div class="project-card__tooltip">
+      Mixture-of-Experts models suffer from inefficient batched computation due to dynamic routing and load imbalance. We developed variable-sized batched GEMM kernels using cuBLAS as an alternative to MegaBlocks' Triton-based sparse kernels. Outperforms sparse MegaBlocks and torch.bmm.
+    </div>
     <div class="project-card__image">
-      <div class="project-card__hover-overlay" data-description="Mixture-of-Experts models suffer from inefficient batched computation due to dynamic routing and load imbalance. We developed variable-sized batched GEMM kernels using cuBLAS as an alternative to MegaBlocks' Triton-based sparse kernels. Outperforms sparse MegaBlocks and torch.bmm."></div>
     </div>
     <div class="project-card__content">
       <h3 class="project-card__title">Exploring cuBLAS-Based Variable-Sized Batched GEMM for MoE Inference</h3>
@@ -99,15 +105,19 @@ These days I'm most excited about RL for language models, systems work around at
 </div>
 
 <script>
-// Mobile tap-to-reveal for project descriptions
+// Mobile tap-to-reveal for project tooltips
 document.addEventListener('DOMContentLoaded', function() {
   if (window.innerWidth <= 768) {
-    const projectImages = document.querySelectorAll('.project-card__image');
+    const projectCards = document.querySelectorAll('.project-card');
 
-    projectImages.forEach(function(image) {
-      image.addEventListener('click', function(e) {
+    projectCards.forEach(function(card) {
+      card.addEventListener('click', function(e) {
+        // Don't trigger if clicking a link
+        if (e.target.closest('.project-card__link')) {
+          return;
+        }
+
         e.stopPropagation();
-        const card = this.closest('.project-card');
 
         // Close other cards
         document.querySelectorAll('.project-card').forEach(function(otherCard) {
@@ -123,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Close when clicking outside
     document.addEventListener('click', function(e) {
-      if (!e.target.closest('.project-card__image')) {
+      if (!e.target.closest('.project-card')) {
         document.querySelectorAll('.project-card').forEach(function(card) {
           card.classList.remove('show-description');
         });
