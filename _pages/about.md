@@ -30,11 +30,6 @@ Check out my [CV](/cv/) for more detailed info.
     </div>
     <div class="project-card__content">
       <h3 class="project-card__title">Retrieval Optimization</h3>
-      <div class="project-card__tags">
-        <span class="project-card__tag">RAG</span>
-        <span class="project-card__tag">NLP</span>
-        <span class="project-card__tag">IR</span>
-      </div>
       <div class="project-card__links">
         <a href="https://github.com/AmanSinghal927/RAG-prod" class="project-card__link">
           <i class="fab fa-github"></i>
@@ -56,11 +51,6 @@ Check out my [CV](/cv/) for more detailed info.
     </div>
     <div class="project-card__content">
       <h3 class="project-card__title">DPO-RLIF: Reinforcement Learning from Structurally-Derived Implicit Feedback</h3>
-      <div class="project-card__tags">
-        <span class="project-card__tag">DPO</span>
-        <span class="project-card__tag">RLHF</span>
-        <span class="project-card__tag">Medical NLP</span>
-      </div>
       <div class="project-card__links">
         <a href="https://github.com/AmanSinghal927/DPO-RL/tree/master" class="project-card__link">
           <i class="fab fa-github"></i>
@@ -82,11 +72,6 @@ Check out my [CV](/cv/) for more detailed info.
     </div>
     <div class="project-card__content">
       <h3 class="project-card__title">Exploring cuBLAS-Based Variable-Sized Batched GEMM for MoE Inference</h3>
-      <div class="project-card__tags">
-        <span class="project-card__tag">CUDA</span>
-        <span class="project-card__tag">cuBLAS</span>
-        <span class="project-card__tag">MOE</span>
-      </div>
       <div class="project-card__links">
         <a href="https://github.com/Aiden-Frost/megablocks" class="project-card__link">
           <i class="fab fa-github"></i>
