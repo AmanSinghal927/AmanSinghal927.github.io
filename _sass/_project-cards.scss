@@ -11,6 +11,17 @@
   position: relative; // Establish positioning context but don't create stacking context
   z-index: auto; // Don't isolate stacking context
 
+  // When hovering over grid, fade all cards by default
+  &:hover .project-card {
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+  }
+
+  // Restore opacity for the hovered card
+  &:hover .project-card:hover {
+    opacity: 1;
+  }
+
   // 2 columns on tablets
   @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);

@@ -26,10 +26,14 @@
     @include suffix(1.75 of 12);
     max-width: 1050px; // Wider text column (1.5x of 700px)
     margin-left: 2cm; // Move text to the right by 2cm
+    margin-top: 0 !important; // Force no top margin
+    padding-top: 0 !important; // Force no top padding
   }
 
   .page__inner-wrap {
     @include full();
+    margin-top: 0 !important; // Force no top margin
+    padding-top: 0 !important; // Force no top padding
 
     .page__content,
     .page__meta,
