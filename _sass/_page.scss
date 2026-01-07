@@ -21,10 +21,10 @@
 
 .page {
   @include breakpoint($large) {
-    @include span(9 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2.5 of 12);
-    max-width: 700px; // Narrower text column
+    @include span(10 of 12 last);
+    @include prefix(0.25 of 12); // Reduced gap between sidebar and content
+    @include suffix(1.75 of 12);
+    max-width: 1050px; // Wider text column (1.5x of 700px)
   }
 
   .page__inner-wrap {
@@ -78,7 +78,8 @@
   }
 
   a {
-    text-decoration: underline;
+    color: #0000EE; // Bright blue links
+    text-decoration: none;
 
     &:hover {
       text-decoration: underline;
