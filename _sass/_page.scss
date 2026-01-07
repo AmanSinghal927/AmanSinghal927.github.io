@@ -25,6 +25,7 @@
     @include prefix(0.25 of 12); // Reduced gap between sidebar and content
     @include suffix(1.75 of 12);
     max-width: 1050px; // Wider text column (1.5x of 700px)
+    margin-left: 2cm; // Move text to the right by 2cm
   }
 
   .page__inner-wrap {

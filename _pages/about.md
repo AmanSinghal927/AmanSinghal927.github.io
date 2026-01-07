@@ -10,11 +10,13 @@ redirect_from:
 
 ## About Me
 
-I'm a Sr Research Engineer at Together AI, working on making inference faster at scale. Mostly that means speculative decoding—training models, cooking up data recipes, and building out training framework features as needed. Lately I've been digging into long-context training and model distillation.
+I'm a Sr Research Engineer at [Together AI](https://www.together.ai/), working on making inference faster at scale. Mostly that means speculative decoding—training models, cooking up data recipes, and building out training framework features as needed. Lately I've been digging into long-context training and model distillation.
 
-Before this, I've worked at research labs (OLAB, NYU Langone & CVIT Lab, IIIT-Hyderabad) and industry data science gigs, working on things like information extraction, machine translation, and question-answering.
+Before this, I've worked at research labs ([OLAB](https://www.nyuolab.org/), NYU Langone & [CVIT Lab](https://cvit.iiit.ac.in/), IIIT-Hyderabad) and industry data science gigs, working on things like information extraction, machine translation, and question-answering.
 
-These days I'm most excited about RL for language models, systems work around attention, and multimodality. Also I keep an eye out for ML infrastructure. Check out my [CV](/cv/) for more detailed info.
+These days I'm most excited about RL for language models, systems work around attention, and multimodality. Also I keep an eye out for ML infrastructure.
+
+Check out my [CV](/cv/) for more detailed info.
 
 ## Featured Projects
 
