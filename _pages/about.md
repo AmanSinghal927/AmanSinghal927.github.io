@@ -23,5 +23,7 @@ These days I'm most excited about RL for language models, systems work around at
 ### ML Algorithms from Scratch
 Building core machine learning algorithms from first principles—understanding the math, implementing the code, and exploring the trade-offs. From gradient descent optimizers to neural network architectures, this project digs into what makes ML tick under the hood.
 
-### RAG/DPO Implementation
-Exploring Retrieval-Augmented Generation (RAG) and Direct Preference Optimization (DPO) for language models. Practical implementations covering retrieval strategies, preference learning, and fine-tuning techniques for aligning models with human preferences.
+### DPO-RLIF: Reinforcement Learning from Structurally-Derived Implicit Feedback
+LLMs in healthcare produce untrustworthy outputs due to biases from human annotators in RLHF and the difficulty of obtaining reliable alignment data at scale. We leverage the structural bias in multiple-choice questions to generate alignment data at medical licensing exam complexity, achieving a 5.5% improvement over SFT on MMLU medical subsets and other clinical evaluation benchmarks.
+
+**Links:** [GitHub Repo](https://github.com/AmanSinghal927/DPO-RL/tree/master) | [Project Report](https://kalpanmukherjee.github.io/dpo-rlif/)
