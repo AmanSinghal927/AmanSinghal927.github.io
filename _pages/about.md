@@ -22,22 +22,26 @@ These days I'm most excited about RL for language models, systems work around at
 
   <div class="project-card">
     <div class="project-card__image">
-      <!-- Add your image here later: <img src="/images/ml-algorithms.jpg" alt="ML Algorithms"> -->
+      <!-- Add your image here later: <img src="/images/retrieval-optimization.jpg" alt="Retrieval Optimization"> -->
     </div>
     <div class="project-card__content">
-      <h3 class="project-card__title">ML Algorithms from Scratch</h3>
+      <h3 class="project-card__title">Retrieval Optimization</h3>
       <div class="project-card__tags">
-        <span class="project-card__tag">Python</span>
-        <span class="project-card__tag">NumPy</span>
-        <span class="project-card__tag">ML Theory</span>
+        <span class="project-card__tag">RAG</span>
+        <span class="project-card__tag">Information Retrieval</span>
+        <span class="project-card__tag">NLP</span>
       </div>
       <p class="project-card__description">
-        Building core machine learning algorithms from first principles—understanding the math, implementing the code, and exploring the trade-offs. From gradient descent optimizers to neural network architectures, this project digs into what makes ML tick under the hood.
+        Explored retrieval strategies for RAG pipelines including chunking optimization, sparse vs. dense embeddings (TF-IDF, DRAGON+, Sentence Transformers), and two-level retrieve-and-rerank approaches. Achieved <span class="project-card__highlight">78.6% Recall@10</span> through rechunking and similarity thresholding, with improved MRR via hybrid retrieval.
       </p>
       <div class="project-card__links">
-        <a href="#" class="project-card__link">
+        <a href="https://github.com/AmanSinghal927/RAG-prod" class="project-card__link">
           <i class="fab fa-github"></i>
           <span>Code</span>
+        </a>
+        <a href="https://github.com/AmanSinghal927/RAG-prod/blob/master/reports/AmanSinghal_report.pdf" class="project-card__link">
+          <i class="fas fa-file-alt"></i>
+          <span>Report</span>
         </a>
       </div>
     </div>
