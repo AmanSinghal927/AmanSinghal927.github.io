@@ -178,30 +178,28 @@
 
 .project-card__links {
   display: flex;
-  justify-content: space-between; // Code on left, Report/Paper on right
+  justify-content: space-between; // Icons spread across: left and right
   align-items: center;
   width: 100%;
   padding-top: 1rem;
   border-top: 1px solid $border-color;
   margin-top: auto; // Push to bottom of flex container
-  gap: 1rem; // Minimum gap between buttons if both exist
+  gap: 0.5rem; // Minimum gap between icon buttons
 }
 
 .project-card__link {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  justify-content: center;
+  width: 40px; // Square button for icon-only
+  height: 40px;
+  padding: 0;
   background: $body-color;
   border: 1px solid $border-color;
-  border-radius: $border-radius;
+  border-radius: 8px; // Slightly rounded square
   color: $text-color;
   text-decoration: none;
-  font-size: $type-size-7;
-  font-weight: 500;
   transition: $global-transition;
-  white-space: nowrap; // Prevent text wrapping in buttons
-  max-width: 48%; // Prevent overflow, allow space for both buttons
   flex: 0 0 auto; // Don't grow, don't shrink, auto basis
 
   &:hover {
@@ -209,16 +207,11 @@
     border-color: $primary-color;
     color: $primary-color;
     text-decoration: none;
+    transform: translateY(-2px); // Subtle lift on hover
   }
 
   i {
-    font-size: $type-size-6;
-    flex-shrink: 0; // Prevent icon from shrinking
-  }
-
-  span {
-    overflow: hidden;
-    text-overflow: ellipsis; // Handle long text gracefully
+    font-size: 1.1rem; // Larger icon for better visibility
   }
 }
 

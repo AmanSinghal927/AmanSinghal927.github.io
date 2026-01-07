@@ -33,11 +33,9 @@ Check out my [CV](/cv/) for more detailed info.
       <div class="project-card__links">
         <a href="https://github.com/AmanSinghal927/RAG-prod" class="project-card__link">
           <i class="fab fa-github"></i>
-          <span>Code</span>
         </a>
         <a href="https://github.com/AmanSinghal927/RAG-prod/blob/master/reports/AmanSinghal_report.pdf" class="project-card__link">
           <i class="fas fa-file-alt"></i>
-          <span>Report</span>
         </a>
       </div>
     </div>
@@ -54,11 +52,9 @@ Check out my [CV](/cv/) for more detailed info.
       <div class="project-card__links">
         <a href="https://github.com/AmanSinghal927/DPO-RL/tree/master" class="project-card__link">
           <i class="fab fa-github"></i>
-          <span>Code</span>
         </a>
         <a href="https://kalpanmukherjee.github.io/dpo-rlif/" class="project-card__link">
           <i class="fas fa-file-alt"></i>
-          <span>Paper</span>
         </a>
       </div>
     </div>
@@ -75,15 +71,12 @@ Check out my [CV](/cv/) for more detailed info.
       <div class="project-card__links">
         <a href="https://github.com/Aiden-Frost/megablocks" class="project-card__link">
           <i class="fab fa-github"></i>
-          <span>Code</span>
         </a>
         <a href="https://github.com/Aiden-Frost/grouped_gemm" class="project-card__link">
           <i class="fas fa-file-alt"></i>
-          <span>Paper</span>
         </a>
         <a href="/posts/2026/01/moe-cublas-gemm/" class="project-card__link">
           <i class="fas fa-file-alt"></i>
-          <span>Report</span>
         </a>
       </div>
     </div>
