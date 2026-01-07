@@ -99,6 +99,10 @@ These days I'm most excited about RL for language models, systems work around at
           <i class="fab fa-github"></i>
           <span>Grouped GEMM</span>
         </a>
+        <a href="/posts/2026/01/moe-cublas-gemm/" class="project-card__link">
+          <i class="fas fa-file-alt"></i>
+          <span>Report</span>
+        </a>
       </div>
     </div>
   </div>
