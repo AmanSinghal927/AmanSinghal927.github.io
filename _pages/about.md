@@ -81,6 +81,10 @@ Check out my [CV](/cv/) for more detailed info.
 
 </div>
 
+## Selected Talks
+
+- **[Tuning into Trends: An Analysis of Artists' Streaming Popularity](/talks/tuning-into-trends/)** - Big Data Analytics Symposium, NYU Courant Institute of Mathematical Sciences, 2024
+
 ## Paper Digest
 
 {% assign recent_posts = site.posts | limit: 3 %}

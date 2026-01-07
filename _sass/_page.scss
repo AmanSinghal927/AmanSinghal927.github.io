@@ -59,17 +59,32 @@
 }
 
 .page__content {
-  > h2:first-child {
-    margin-top: 0 !important; // Override base h2 margin
-  }
-
   h2 {
+    margin-top: 3rem; // Consistent spacing between sections
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
   }
 
+  // Override for first h2 only (About Me)
+  > h2:first-child {
+    margin-top: 0 !important; // No margin at top of page
+  }
+
   p, li, dl {
     font-size: 1em;
+  }
+
+  // Style for Selected Talks list
+  ul {
+    li {
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+
+      strong {
+        font-weight: 600;
+        color: $text-color;
+      }
+    }
   }
 
   /* paragraph indents */
