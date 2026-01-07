@@ -38,6 +38,15 @@
     font-size: $type-size-5;
   }
 
+  // Override for author name specifically
+  h3.author__name {
+    @include breakpoint($large) {
+      font-size: 3.5rem !important;
+      font-weight: 800 !important;
+      font-family: $sans-serif !important;
+    }
+  }
+
   p, li {
     font-family: $sans-serif;
     font-size: $type-size-6;
@@ -124,9 +133,10 @@
   font-size: $type-size-5;
 
   @include breakpoint($large) {
-    font-size: 2.5rem; // Much larger name
-    font-weight: 700; // Bolder weight
-    line-height: 1.2;
+    font-size: 3.5rem !important; // MUCH larger name - ~56px
+    font-weight: 800 !important; // Extra bold weight
+    line-height: 1.2 !important;
+    letter-spacing: -0.02em; // Tighter spacing for large text
   }
 }
 
