@@ -25,13 +25,13 @@
   background: $body-color;
   border: 1px solid $border-color;
   border-radius: $border-radius;
-  overflow: hidden;
+  overflow: hidden; // Clip content to border-radius
   transition: $global-transition;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   height: 100%;
-  position: relative; // For hover overlay positioning
+  position: relative; // For centered tooltip positioning
 
   &:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -40,7 +40,7 @@
     .project-card__tooltip {
       opacity: 1;
       visibility: visible; // Make visible on hover
-      transform: translateX(-50%) translateY(0); // Slide up to final position
+      transform: translate(-50%, -50%) scale(1); // Scale up to full size
     }
   }
 }
@@ -120,40 +120,33 @@
   display: none;
 }
 
-// Tooltip that appears above the card
+// Tooltip that appears centered in the middle of the card
 .project-card__tooltip {
   position: absolute;
-  bottom: calc(100% + 8px); // Position above card with 8px gap
+  top: 50%; // Position in vertical center
   left: 50%;
-  transform: translateX(-50%) translateY(4px); // Centered, slightly down initially
-  max-width: 320px;
-  padding: 12px 16px;
-  background: #1a1a1a;
+  transform: translate(-50%, -50%) scale(0.95); // Centered, slightly scaled down initially
+  max-width: 90%; // Fit within card boundaries
+  width: auto;
+  padding: 16px 20px;
+  background: rgba(26, 26, 26, 0.95); // Slightly transparent
   color: white;
   border-radius: 10px;
   font-size: 14px;
   line-height: 1.5;
   text-align: left;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   opacity: 0;
   visibility: hidden; // Hide by default
   pointer-events: none;
   transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
-  z-index: 100;
+  z-index: 1000; // High z-index to appear above everything
   white-space: normal;
+  backdrop-filter: blur(4px); // Add subtle blur effect
 
-  // Triangle/caret pointing down
+  // Remove the triangle pointer since it's centered overlay now
   &::after {
-    content: '';
-    position: absolute;
-    top: 100%; // Position at bottom of tooltip
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 8px 8px 0 8px;
-    border-color: #1a1a1a transparent transparent transparent;
+    display: none;
   }
 }
 
@@ -166,21 +159,24 @@
   .project-card.show-description .project-card__tooltip {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(0);
+    transform: translate(-50%, -50%) scale(1); // Scale up to full size
     pointer-events: auto;
   }
 
   .project-card__tooltip {
-    max-width: 280px; // Slightly narrower on mobile
+    max-width: 85%; // Fit better on mobile
   }
 }
 
 .project-card__links {
   display: flex;
-  gap: 0.75rem;
+  justify-content: space-between; // Code on left, Report/Paper on right
+  align-items: center;
+  width: 100%;
   padding-top: 1rem;
   border-top: 1px solid $border-color;
   margin-top: auto; // Push to bottom of flex container
+  gap: 1rem; // Minimum gap between buttons if both exist
 }
 
 .project-card__link {
@@ -196,6 +192,9 @@
   font-size: $type-size-7;
   font-weight: 500;
   transition: $global-transition;
+  white-space: nowrap; // Prevent text wrapping in buttons
+  max-width: 48%; // Prevent overflow, allow space for both buttons
+  flex: 0 0 auto; // Don't grow, don't shrink, auto basis
 
   &:hover {
     background: $lighter-gray;
@@ -206,5 +205,16 @@
 
   i {
     font-size: $type-size-6;
+    flex-shrink: 0; // Prevent icon from shrinking
   }
+
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis; // Handle long text gracefully
+  }
+}
+
+// If only one button, keep it left-aligned and natural width
+.project-card__links:has(.project-card__link:only-child) {
+  justify-content: flex-start;
 }
