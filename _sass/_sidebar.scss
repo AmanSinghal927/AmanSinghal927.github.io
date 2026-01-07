@@ -18,6 +18,7 @@
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
+    margin-top: 0.5em; // Align sidebar top with #main top
 
     &:hover {
       opacity: 1;
@@ -91,7 +92,7 @@
     width: auto;
     height: auto;
     text-align: left; // Left-align the image
-    margin-top: 3.2em; // Align top of image with bottom of "About Me" heading (h2 height + padding + border)
+    margin-top: 0; // Align top of image with top of "About Me" heading
     margin-bottom: 1rem; // Compact spacing below photo
   }
 
