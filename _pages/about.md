@@ -93,7 +93,7 @@ Check out my [CV](/cv/) for more detailed info.
 
 {% endfor %}
 
-[View all →](/paper-digest/)
+<span style="text-decoration: underline;">[View all →](/paper-digest/)</span>
 
 <script>
 // Mobile tap-to-reveal for project tooltips
