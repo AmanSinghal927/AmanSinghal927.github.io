@@ -75,4 +75,32 @@ These days I'm most excited about RL for language models, systems work around at
     </div>
   </div>
 
+  <div class="project-card">
+    <div class="project-card__image">
+      <!-- Add your image here later: <img src="/images/moe-gemm.jpg" alt="MoE GEMM"> -->
+    </div>
+    <div class="project-card__content">
+      <h3 class="project-card__title">Exploring cuBLAS-Based Variable-Sized Batched GEMM for MoE Inference</h3>
+      <div class="project-card__tags">
+        <span class="project-card__tag">CUDA</span>
+        <span class="project-card__tag">cuBLAS</span>
+        <span class="project-card__tag">MoE</span>
+        <span class="project-card__tag">Systems</span>
+      </div>
+      <p class="project-card__description">
+        Mixture-of-Experts models suffer from inefficient batched computation due to dynamic routing and load imbalance. We developed variable-sized batched GEMM kernels using cuBLAS as an alternative to MegaBlocks' Triton-based sparse kernels. Our approach <span class="project-card__highlight">outperforms sparse MegaBlocks and torch.bmm</span> (which failed 30% of test cases due to OOM) while avoiding Triton's memory instability issues.
+      </p>
+      <div class="project-card__links">
+        <a href="https://github.com/Aiden-Frost/megablocks" class="project-card__link">
+          <i class="fab fa-github"></i>
+          <span>MegaBlocks</span>
+        </a>
+        <a href="https://github.com/Aiden-Frost/grouped_gemm" class="project-card__link">
+          <i class="fab fa-github"></i>
+          <span>Grouped GEMM</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
 </div>
