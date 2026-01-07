@@ -81,16 +81,14 @@ analytics:
 # Site Author
 author:
   name             : "Aman Singhal"
-  avatar           : "myphoto3.jpg"
-  bio              : "Sr Research Engineer @ Together AI | Inference & Speculative Decoding | ML Systems"
-  location         : "Manhattan, New York"
-  employer         : "Together AI"
+  avatar           : "Black_suit_aman.png"
+  bio              : "Sr Research Engineer @ Together AI"
   pubmed           :
   googlescholar    : 
-  email            :  "as14661@nyu.edu"
+  email            :  "aman.singhal@nyu.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
-  cv_link          : https://amansinghal927.github.io/files/Aman_NYU_DS.pdf
+  cv_link          : https://amansinghal927.github.io/files/Aman_11_9_2025.pdf
   bitbucket        :
   codepen          :
   dribbble         :
