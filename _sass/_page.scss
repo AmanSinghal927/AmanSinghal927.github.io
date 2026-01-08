@@ -428,3 +428,8 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+.page__content h2:first-of-type {
+  margin-top: 1.5em !important;
+  padding-top: 0 !important;
+}
