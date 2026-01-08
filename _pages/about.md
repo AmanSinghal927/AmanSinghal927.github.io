@@ -94,7 +94,13 @@ Check out my [CV](/cv/) for more detailed info.
 
 ## Selected Talks
 
-[Tuning into Trends: An Analysis of Artists' Streaming Popularity](/talks/tuning-into-trends/) - Big Data Analytics Symposium, NYU Courant Institute of Mathematical Sciences, 2024
+[GPT-3: Language Models are Few-shot Learners](/talks/gpt3-few-shot-learners/) - Large Language and Vision Models Symposium, NYU Center for Data Science, 2024
+
+[Llama 2: Open Foundation and Fine-Tuned Chat Models](/talks/llama2-open-foundation/) - Large Language and Vision Models Symposium, NYU Center for Data Science, 2024
+
+[Generative Agents: Interactive Simulacra of Human Behavior](/talks/generative-agents/) - Large Language and Vision Models Symposium, NYU Center for Data Science, 2024
+
+<span style="text-decoration: underline;">[View all →](/talks/)</span>
 
 <script>
 // Mobile tap-to-reveal for project tooltips
