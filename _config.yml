@@ -8,7 +8,7 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Aman Singhal"
-title_separator          : "|"
+title_separator          : "-"
 name                     : &name "Aman Singhal"
 description              : &description "Computer Science @ NYU | Data Scientist | Software Engineer | ML"
 url                      : "https://amansinghal927.github.io"
