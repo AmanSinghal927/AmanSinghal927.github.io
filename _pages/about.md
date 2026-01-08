@@ -102,6 +102,12 @@ Check out my [CV](/cv/) for more detailed info.
 
 <span style="text-decoration: underline;">[View all →](/talks/)</span>
 
+## Conferences
+
+[MLSys 2025](/conferences/mlsys-2025/) - Conference on Machine Learning and Systems
+
+<span style="text-decoration: underline;">[View all →](/conferences/)</span>
+
 <script>
 // Mobile tap-to-reveal for project tooltips
 document.addEventListener('DOMContentLoaded', function() {
