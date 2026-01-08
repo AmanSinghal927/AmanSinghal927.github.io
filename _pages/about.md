@@ -104,7 +104,8 @@ Check out my [CV](/cv/) for more detailed info.
 
 ## Conferences
 
-[MLSys 2025](/conferences/mlsys-2025/) - Conference on Machine Learning and Systems
+**MLSys 2025** - Conference on Machine Learning and Systems
+[Conference takeaways](/conferences/mlsys-2025/)
 
 <span style="text-decoration: underline;">[View all →](/conferences/)</span>
 
