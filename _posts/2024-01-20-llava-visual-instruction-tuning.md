@@ -1,7 +1,7 @@
 ---
 title: 'Visual Instruction Tuning (LLaVA)'
-date: 2026-01-06
-permalink: /posts/2026/01/llava-visual-instruction-tuning/
+date: 2024-01-20
+permalink: /posts/2024/01/llava-visual-instruction-tuning/
 excerpt: 'Instruction tuning has been shown to improve zero-shot capabilities in LLMs. The work extends this to multi-modal models. In this regard, they augment existing visual question-answering prompts using GPT-4 and train an image conditioned language generation model. This architecture consists of a pre-trained large language model (LlaMA) and a vision encoder (CLIP).'
 tags:
   - Vision-Language Models

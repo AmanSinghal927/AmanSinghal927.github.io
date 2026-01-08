@@ -83,12 +83,14 @@ Check out my [CV](/cv/) for more detailed info.
 
 ## Paper Digest
 
-{% assign recent_posts = site.posts | limit: 3 %}
-{% for post in recent_posts %}
-[{{ post.title }}]({{ post.url }})
-{{ post.date | date: "%B %d, %Y" }}
+[FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning](/posts/2024/02/flashattention-2/)
+February 01, 2024
 
-{% endfor %}
+[Visual Instruction Tuning (LLaVA)](/posts/2024/01/llava-visual-instruction-tuning/)
+January 20, 2024
+
+[DINOv2: Learning Robust Visual Features without Supervision](/posts/2024/03/dinov2-visual-features/)
+March 01, 2024
 
 <span style="text-decoration: underline;">[View all →](/paper-digest/)</span>
 

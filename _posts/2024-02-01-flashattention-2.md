@@ -1,7 +1,7 @@
 ---
 title: 'FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning'
-date: 2026-01-06
-permalink: /posts/2026/01/flashattention-2/
+date: 2024-02-01
+permalink: /posts/2024/02/flashattention-2/
 excerpt: 'FlashAttention optimizes transformer attention by tiling computations and minimizing HBM reads/writes using fast on-chip SRAM, while FlashAttention-2 adds further gains through causal masking, sequence-length parallelization, and smarter warp partitioning — achieving up to 10x memory and 2x speed improvements.'
 tags:
   - Attention Mechanisms

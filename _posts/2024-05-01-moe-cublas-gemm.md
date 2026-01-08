@@ -1,7 +1,7 @@
 ---
 title: 'Improving MoE Inference with Variable-Sized Batched GEMM Kernels'
-date: 2026-01-07
-permalink: /posts/2026/01/moe-cublas-gemm/
+date: 2024-05-01
+permalink: /posts/2024/05/moe-cublas-gemm/
 excerpt: 'Mixture-of-Experts (MoE) models enhance efficiency and scalability of large-scale transformers, enabling sparse computation - dynamically routing data to a subset of experts. However, sparsity complicates efficient training & inference in batched settings. We propose a method to address the challenge. Our project aims to optimize MoE training by developing a variable-sized batched General Matrix-Matrix Multiplication (GEMM) kernel - using NVIDIA cuBLAS. Our approach offers an alternative kernel optimization for MoE compared to the Block Sparse Kernel proposed by MegaBlocks. We solve dynamic and imbalanced computation inherent in MoE architectures and improve training efficiency. By leveraging cuBLAS for variable-sized batched GEMM, we enhance the performance of sparse training in MoEs and provide a robust solution to the limitations of current frameworks.'
 tags:
   - Mixture-of-Experts
