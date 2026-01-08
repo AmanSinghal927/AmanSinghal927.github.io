@@ -2,6 +2,7 @@
 title: 'Temperature in LLMs: From Softmax to Autoregressive Decoding'
 date: 2026-01-06
 permalink: /posts/2026/01/temperature-in-llms/
+excerpt: 'Temperature controls LLM output randomness by scaling logits before softmax — high temperature (>1) flattens the distribution for more creative/random outputs, while low temperature (<1) sharpens it for more deterministic, predictable responses. As temperature approaches zero, softmax behaves like argmax — the highest logit token gets nearly all probability mass, making the model always select the most likely next token according to its training.'
 tags:
   - LLM
   - Inference

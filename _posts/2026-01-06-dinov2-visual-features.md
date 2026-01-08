@@ -2,6 +2,7 @@
 title: 'DINOv2: Learning Robust Visual Features without Supervision'
 date: 2026-01-06
 permalink: /posts/2026/01/dinov2-visual-features/
+excerpt: 'DINOv2 is a self-supervised foundation model for computer vision that trains a 1B parameter ViT on 142M curated images using dual objectives: an image-level cross-entropy loss between a student (trained on crops) and an EMA-updated teacher (trained on full images), plus a patch-level masked prediction task with decoupled weights. Key innovations include scalable dataset curation — using clustering-based deduplication and similarity-based augmentation with FAISS indexing instead of manual annotation — achieving 2x faster training and 3x less memory than iBOT while learning transferable features at both image and patch levels.'
 tags:
   - Computer Vision
   - Foundation Models

@@ -15,23 +15,33 @@
   }
 
   a {
-    text-decoration: underline;
+    color: #0000EE; // Bright blue links like main page
+    text-decoration: none; // No underline by default
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: underline; // Underline on hover
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
       }
     }
   }
+
+  p {
+    font-family: $sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #000; // Pure black
+  }
 }
 
 .archive__subtitle {
-  margin: 1.414em 0 0;
+  margin: 3rem 0 0; // Match section spacing from main page
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
-  color: mix(#fff, $gray, 25%);
+  font-size: $type-size-4; // Larger, match h2 size
+  font-family: $sans-serif; // Use main font
+  font-weight: bold;
+  color: #000; // Pure black like main page
   border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
@@ -41,7 +51,14 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
+  font-family: $sans-serif; // Use main font instead of narrow
+  font-size: 1em;
+  line-height: 1.6;
+
+  a {
+    color: #0000EE; // Bright blue
+    font-weight: normal;
+  }
 
   a + a {
     opacity: 0.5;
@@ -59,7 +76,10 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  font-size: 1em; // Match main page font size
+  font-family: $sans-serif;
+  line-height: 1.6;
+  color: #000; // Pure black
 
   & + p {
     text-indent: 0;
@@ -104,6 +124,9 @@
 
   .page__meta {
     margin: 0 0 4px;
+    font-family: $sans-serif;
+    font-size: 1em;
+    color: #000; // Pure black
   }
 }
 

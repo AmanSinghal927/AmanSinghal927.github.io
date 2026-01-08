@@ -2,6 +2,7 @@
 title: 'ZeRO: Memory Optimizations Toward Training Trillion Parameter Models'
 date: 2026-01-06
 permalink: /posts/2026/01/zero-memory-optimizations/
+excerpt: 'Training large models requires far more memory than just storing weights — a 1.5B parameter model needs ~3GB for weights but ~24GB total due to Adam optimizer states (momentum, variance) and gradients. ZeRO (Zero Redundancy Optimizer) solves this by partitioning optimizer states, gradients, and parameters across GPUs — eliminating redundant storage while maintaining data parallelism, unlike traditional approaches that either replicate everything (DP) or suffer from low utilization (MP/PP). The three ZeRO stages progressively reduce memory: ZeRO-1 partitions optimizer states, ZeRO-2 adds gradient partitioning, and ZeRO-3 partitions parameters too, with communication overhead comparable to standard data parallelism.'
 tags:
   - Distributed Training
   - Memory Optimization

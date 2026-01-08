@@ -2,14 +2,13 @@
 title: 'Flamingo: a Visual Language Model for Few-Shot Learning'
 date: 2026-01-06
 permalink: /posts/2026/01/flamingo-visual-language-model/
+excerpt: "The paper's primary contribution is leveraging a pre-trained language model for the development of a multimodal model. This model, which they term a 'visual language model', brings forth two main points of innovation. Firstly, it's adept at handling interleaved images and texts of variable lengths. The importance of interleaving? It's paramount because that's the structure of most online data (data availability). What's the endgame for the authors? They're aiming for a model that can tackle a new task with just a few examples or instructions (few-shot capabilities). A noteworthy mention is that previous methods didn't quite hit the mark in low-data scenarios (previous-work). This approach is pioneering in its focus on few-shot learning."
 tags:
   - Vision-Language Models
   - Few-Shot Learning
   - Multimodal
   - CLIP
 ---
-
-**Note:** For generating the summary of only this paper, I explored a new approach. I used a speech-to-text model to vocally generate my thoughts and then used ChatGPT to organize them. The original transcript of the speech-to-text software is presented towards the end. I proof-read and edited the generated response twice.
 
 ## Summary
 

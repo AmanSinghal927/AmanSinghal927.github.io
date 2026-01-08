@@ -2,6 +2,7 @@
 title: 'Segment Anything'
 date: 2026-01-06
 permalink: /posts/2026/01/segment-anything/
+excerpt: 'SAM (Segment Anything Model) is a foundation model for promptable image segmentation — using a ViT encoder pretrained with MAE, a prompt encoder for points/boxes/masks, and an ambiguity-aware decoder that outputs multiple candidate masks, trained on 1.1B masks for zero-shot transfer.'
 tags:
   - Computer Vision
   - Segmentation
