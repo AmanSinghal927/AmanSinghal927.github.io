@@ -5,10 +5,6 @@ excerpt: "Exploring chunking, retrieval strategies, and evaluation metrics for R
 author_profile: true
 ---
 
-**Author:** Aman Singhal
-**Email:** as14661@nyu.edu
-**Institution:** New York University
-
 [View Code on GitHub](https://github.com/AmanSinghal927/RAG-prod)
 
 ---
