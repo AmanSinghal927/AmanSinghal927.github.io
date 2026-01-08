@@ -10,9 +10,9 @@ redirect_from:
 
 ## About Me
 
-I'm an AI Researcher at [Together AI](https://www.together.ai/), working on making inference faster at scale. Mostly that means speculative decoding—training models, cooking up data recipes, and building out training framework features as needed. Lately I've been digging into long-context training and model distillation.
+I'm working as an AI Researcher at [Together AI](https://www.together.ai/), on pre-training and finetuning Large Language Models, cooking up data recipes, and building out training framework features as needed. Lately I've been digging into long-context training and model distillation.
 
-Before this, I've worked at research labs ([OLAB](https://www.nyuolab.org/), NYU Langone & [CVIT Lab](https://cvit.iiit.ac.in/), IIIT-Hyderabad) and industry data science gigs, working on things like information extraction, machine translation, and question-answering.
+Before this, I got my MSc in Computer Science from [NYU's Courant Institute of Mathematical Sciences](https://cs.nyu.edu/dynamic/masters/prospective-overview/masters-in-computer-science-mscs/), where I explored Reinforcement Learning from Human Feedback for LLMs at [OLAB](https://www.nyuolab.org/), NYU Langone. I've also done research at [CVIT Lab](https://cvit.iiit.ac.in/) at IIIT-Hyderabad along with industry data science roles, working on information extraction, machine translation, and question-answering.
 
 These days I'm most excited about RL for language models, systems work around attention, and multimodality. Also I keep an eye out for ML infrastructure.
 
