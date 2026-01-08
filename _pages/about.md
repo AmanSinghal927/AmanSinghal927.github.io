@@ -27,6 +27,7 @@ Check out my [CV](/cv/) for more detailed info.
       Explored retrieval strategies for RAG pipelines including chunking optimization, sparse vs. dense embeddings (TF-IDF, DRAGON+, Sentence Transformers), and two-level retrieve-and-rerank approaches. Achieved 78.6% Recall@10 through rechunking and similarity thresholding.
     </div>
     <div class="project-card__image">
+      <img src="/assets/images/rag-project.png" alt="RAG System Architecture">
     </div>
     <div class="project-card__content">
       <h3 class="project-card__title">Retrieval Optimization</h3>
@@ -46,6 +47,7 @@ Check out my [CV](/cv/) for more detailed info.
       LLMs in healthcare produce untrustworthy outputs due to biases from human annotators in RLHF. We leverage structural bias in multiple-choice questions to generate alignment data at medical licensing exam complexity, achieving +5.5% over SFT on MMLU medical subsets.
     </div>
     <div class="project-card__image">
+      <img src="/assets/images/dpo-project.png" alt="DPO-RLIF Architecture">
     </div>
     <div class="project-card__content">
       <h3 class="project-card__title">DPO-RLIF: Reinforcement Learning from Structurally-Derived Implicit Feedback</h3>
@@ -65,6 +67,7 @@ Check out my [CV](/cv/) for more detailed info.
       Mixture-of-Experts models suffer from inefficient batched computation due to dynamic routing and load imbalance. We developed variable-sized batched GEMM kernels using cuBLAS as an alternative to MegaBlocks' Triton-based sparse kernels. Outperforms sparse MegaBlocks and torch.bmm.
     </div>
     <div class="project-card__image">
+      <img src="/assets/images/moe-project.png" alt="MoE GEMM Architecture">
     </div>
     <div class="project-card__content">
       <h3 class="project-card__title">Exploring cuBLAS-Based Variable-Sized Batched GEMM for MoE Inference</h3>
@@ -72,7 +75,7 @@ Check out my [CV](/cv/) for more detailed info.
         <a href="https://github.com/Aiden-Frost/megablocks" class="project-card__link">
           <i class="fab fa-github"></i>
         </a>
-        <a href="/posts/2026/01/moe-cublas-gemm/" class="project-card__link">
+        <a href="/posts/2024/05/moe-cublas-gemm/" class="project-card__link">
           <i class="fas fa-file-alt"></i>
         </a>
       </div>
@@ -109,6 +112,8 @@ March 01, 2024
 **MLSys 2025** - Conference on Machine Learning and Systems
 
 [Conference takeaways](/conferences/mlsys-2025/)
+
+**NeurIPS 2025** - Conference on Neural Information Processing Systems
 
 <span style="text-decoration: underline;">[View all →](/conferences/)</span>
 
