@@ -41,28 +41,55 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-/* 1. Eliminate the empty title container and its row spacing */
+/* --- 1. REMOVE TOP GAP --- */
+
+/* Hide the empty title container and breadcrumb row */
 .page__inner-wrap header,
-.page__title-container {
+.page__title,
+.breadcrumbs {
   display: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
-/* 2. Remove all top-padding from the main content column */
-.page__inner-wrap .page__content {
+/* Remove padding from the main layout and content wrappers */
+#main,
+.page__inner-wrap,
+.page__content {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-/* 3. Force the first header (About Me) to touch the top */
+/* Force the "About Me" header to start at the very top pixel */
 .page__content h2:first-of-type,
 .page__content h1:first-of-type {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-/* 4. Remove spacing above the main layout container */
-#main {
-  padding-top: 0 !important;
+/* --- 2. CENTER & NARROW CONTENT --- */
+
+/* Centers the entire page container (sidebar + content) */
+.page__inner-wrap {
+  max-width: 1000px !important; /* Total width of sidebar + content */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+}
+
+/* Narrow the text area specifically for better readability */
+.page__content {
+  max-width: 700px !important;
+}
+
+/* --- 3. SIDEBAR ALIGNMENT --- */
+
+/* Ensures the sidebar profile photo stays aligned with the top of your text */
+.sidebar {
+  margin-top: 0 !important;
+}
+
+/* Adjust for mobile: allow full width on small screens */
+@media (max-width: 768px) {
+  .page__inner-wrap {
+    max-width: 100% !important;
+  }
 }

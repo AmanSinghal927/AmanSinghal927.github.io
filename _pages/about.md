@@ -34,7 +34,7 @@ Check out my [CV](/cv/) for more detailed info.
         <a href="https://github.com/AmanSinghal927/RAG-prod" class="project-card__link">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://github.com/AmanSinghal927/RAG-prod/blob/master/reports/AmanSinghal_report.pdf" class="project-card__link">
+        <a href="/projects/retrieval-optimization-report/" class="project-card__link">
           <i class="fas fa-file-alt"></i>
         </a>
       </div>
@@ -105,6 +105,7 @@ Check out my [CV](/cv/) for more detailed info.
 ## Conferences
 
 **MLSys 2025** - Conference on Machine Learning and Systems
+
 [Conference takeaways](/conferences/mlsys-2025/)
 
 <span style="text-decoration: underline;">[View all →](/conferences/)</span>
