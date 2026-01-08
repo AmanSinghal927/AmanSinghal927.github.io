@@ -40,3 +40,22 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* Removes the padding from the top of the main content wrapper */
+.page__inner-wrap .page__content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Specifically hides the title container if it is empty */
+  .page__title {
+    margin-top: 0 !important;
+    display: none;
+  }
+
+/* Remove margin from the very first heading in the content area */
+.page__content h2:first-child,
+.archive h2:first-child {
+  margin-top: 0 !important;
+}
+
